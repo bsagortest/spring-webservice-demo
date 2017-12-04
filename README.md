@@ -26,9 +26,9 @@ To install the Oracle jdbc drivers :
     
 # Now go to TestController.java class and change the sql query as yours.
     String sql = "select " +
-					"t_sex_code, t_lang2_name " +
-        			"from " + 
-        				"t02006";
+				"t_sex_code, t_lang2_name " +
+        		"from " + 
+        		"t02006";
                 
     if(resultSet!=null){
             	 while (resultSet.next()) {
