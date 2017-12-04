@@ -3,14 +3,14 @@ This is a demo project for webservice.
 Oracle database is integrated in this project.
 Maven Install:
 To install the Oracle jdbc drivers :
-    ojdbc6.jar:
-    $ mvn install:install-file -Dfile={Path/to/your/ojdbc6.jar}
-          -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar
-    ojdbc7.jar:
-    $ mvn install:install-file -Dfile={Path/to/your/ojdbc7.jar}
-      -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0 -Dpackaging=jar
+    #ojdbc6.jar:
+    	$ mvn install:install-file -Dfile={Path/to/your/ojdbc6.jar}
+          	-DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar
+    #ojdbc7.jar:
+    	$ mvn install:install-file -Dfile={Path/to/your/ojdbc7.jar}
+      		-DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0 -Dpackaging=jar
       
-Just add your oracle jar and edit Database.java class
+#Just add your oracle jar and edit Database.java class
     public Connection getConnection() {
     	Connection connection = null;
     	try {
@@ -24,7 +24,7 @@ Just add your oracle jar and edit Database.java class
     	return connection;
     }
     
-Now go to TestController.java class and change the sql query as yours.
+#Now go to TestController.java class and change the sql query as yours.
     String sql = "select " +
 						"t_sex_code, t_lang2_name " +
         			"from " + 
@@ -40,6 +40,6 @@ Now go to TestController.java class and change the sql query as yours.
     			 }
              }
                 
-Now compile and run the project and use the url: http://localhost:9010/rufaida
-If you want to change the port, go to application.properties
+#Now compile and run the project and use the url: http://localhost:9010/rufaida
+#If you want to change the port, go to application.properties
   server.port=9010
