@@ -1,0 +1,5 @@
+com\rufaida\controller\test\TestController.class
+com\rufaida\service\Database.class
+com\rufaida\app\Application.class
+com\rufaida\config\AllConfig.class
+com\rufaida\domain\test\TestEntity.class
