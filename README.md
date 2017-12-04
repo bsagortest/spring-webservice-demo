@@ -3,15 +3,15 @@ This is a demo project for webservice.
 Oracle database is integrated in this project.
 Maven Install:
 To install the Oracle jdbc drivers :
-  ojdbc6.jar:
+    ojdbc6.jar:
     $ mvn install:install-file -Dfile={Path/to/your/ojdbc6.jar}
           -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar
-  ojdbc7.jar:
+    ojdbc7.jar:
     $ mvn install:install-file -Dfile={Path/to/your/ojdbc7.jar}
       -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0 -Dpackaging=jar
       
 Just add your oracle jar and edit Database.java class
-  public Connection getConnection() {
+    public Connection getConnection() {
     	Connection connection = null;
     	try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
