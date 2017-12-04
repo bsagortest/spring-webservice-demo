@@ -10,7 +10,7 @@ To install the Oracle jdbc drivers :
     	$ mvn install:install-file -Dfile={Path/to/your/ojdbc7.jar}
       		-DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0 -Dpackaging=jar
       
-#Just add your oracle jar and edit Database.java class
+# Just add your oracle jar and edit Database.java class
     public Connection getConnection() {
     	Connection connection = null;
     	try {
@@ -24,7 +24,7 @@ To install the Oracle jdbc drivers :
     	return connection;
     }
     
-#Now go to TestController.java class and change the sql query as yours.
+# Now go to TestController.java class and change the sql query as yours.
     String sql = "select " +
 						"t_sex_code, t_lang2_name " +
         			"from " + 
@@ -40,6 +40,6 @@ To install the Oracle jdbc drivers :
     			 }
              }
                 
-#Now compile and run the project and use the url: http://localhost:9010/rufaida
-#If you want to change the port, go to application.properties
+# Now compile and run the project and use the url: http://localhost:9010/rufaida
+# If you want to change the port, go to application.properties
   server.port=9010
